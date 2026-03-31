@@ -3,63 +3,156 @@
 <head>
     <meta charset="UTF-8">
     <title>Pedido de Servicio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        fieldset {
+            margin-top: 15px;
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit {
+            background: #00c853;
+            color: white;
+        }
+
+        .submit:hover {
+            background: #00a844;
+        }
+
+        .reset {
+            background: #d32f2f;
+            color: white;
+        }
+
+        .reset:hover {
+            background: #b71c1c;
+        }
+    </style>
 </head>
 <body>
 
-  <h1>Realizar Pedido</h1>
-    <form action="https://httpbin.org/post" method="post" target ="_blank">
-        <label for="nombre">Nombre:</label>
-        <input type="text" id="nombre" name="nombre" required><br><br>
-    
-        <label for="email">Correo Electrónico:</label>
-        <input type="email" id="email" name="email" required><br><br>
+<div class="container">
+    <h1>💪 Pedido de Servicio</h1>
 
-        <label for="telefono">Teléfono:</label>
-        <input type="tel" id="telefono" name="telefono" required><br><br>
+    <form action="https://httpbin.org/post" method="post">
 
-        <label for="servicio">Selecciona el servicio:</label>
-        <select id="servicio" name="servicio" required>
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
 
-        <option value="">--Selecciona un servicio--</option>
-        <option value="entrenamiento_personal">Entrenamiento Personal</option>
-        <option value="clases_grupales">Clases Grupales</option>
-        <option value="nutricion">Asesoría Nutricional</option>
+        <label>Correo Electrónico:</label>
+        <input type="email" name="email" required>
 
-        </select><br><br>
+        <label>Teléfono:</label>
+        <input type="tel" name="telefono" placeholder="Ej: 2911234567" required>
 
-       <fieldset>
-             <legend>Tipo de Membresía:</legend>
+        <label>Selecciona el servicio:</label>
+        <select name="servicio" required>
+            <option value="">--Selecciona--</option>
+            <option value="entrenamiento_personal">Entrenamiento Personal</option>
+            <option value="clases_grupales">Clases Grupales</option>
+            <option value="nutricion">Asesoría Nutricional</option>
+        </select>
 
-            <label>
-             <input type="radio" name="membresia" value="basica" required>
-             Básica
-             </label><br>
+        <fieldset>
+            <legend>Tipo de Membresía</legend>
 
-             <label>
-             <input type="radio" name="membresia" value="premium">
-              Premium
-             </label><br>
+            <div class="radio-group">
+                <label><input type="radio" name="membresia" value="basica" required> Básica</label>
+                <label><input type="radio" name="membresia" value="premium"> Premium</label>
+                <label><input type="radio" name="membresia" value="vip"> VIP</label>
+            </div>
+        </fieldset>
 
-             <label>
-             <input type="radio" name="membresia" value="vip">
-                VIP
-             </label>
+        <label>Fecha deseada:</label>
+        <input type="date" name="fecha" required>
 
-</fieldset><br>
+        <label>Comentarios:</label>
+        <textarea name="comentarios" rows="4"></textarea>
 
-        <label for="fecha">Fecha deseada:</label>
-        <input type="date" id="fecha" name="fecha" required><br><br>
+        <div class="checkbox">
+            <input type="checkbox" name="terminos" required>
+            <span>Acepto los términos</span>
+        </div>
 
-        <label for="comentarios">Comentarios:</label><br>
-        <textarea id="comentarios" name="comentarios" rows="5" cols="40" placeholder="Escribe tus comentarios aquí..."></textarea><br><br>
+        <button type="submit" class="submit">Enviar Pedido</button>
+        <button type="reset" class="reset">Limpiar</button>
 
-        <label>
-            <input type="checkbox" name="terminos" value="acepto" required>
-            Acepto los términos y condiciones
-        </label><br><br>
-
-        <button type="submit">Enviar Pedido</button>
-        <button type="reset">Limpiar Formulario</button>
     </form>
+</div>
+
 </body>
 </html>
