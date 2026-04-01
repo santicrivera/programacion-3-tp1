@@ -12,6 +12,13 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }
 
 header nav {
@@ -127,4 +134,40 @@ header nav {
   color: #fff;
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   line-height: 1.2;
+}
+
+.contacto {
+  padding: 60px 24px;
+  text-align: center;
+  color: #e91e07;
+}
+
+.contact-info {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+.contact-item {
+  background: #1a1a1a;
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 32px;
+  min-width: 200px;
+}
+
+.contact-item h2 {
+  color: #e91e07;
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.contact-item a {
+  color: #f8f7f7;
+  text-decoration: none;
+}
+
+.contact-item a:hover {
+  color: #fff;
 }
