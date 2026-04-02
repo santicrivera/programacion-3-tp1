@@ -33,40 +33,42 @@
     </header>
 
     <main>
-      <section class="contacto">
-        </div>
-          <div class="contact-item">
-            <h1>CONTACTO</h1>
-            <p style="color: #f8f7f7;">¿Tienes alguna pregunta o necesitas más información? ¡Estamos aquí para ayudarte! Puedes contactarnos a través de los siguientes medios:</p>
-          </div>
-        
-        
+      <section class="contacto-section">
+    <div class="contacto-header">
+    <h1>Contacto</h1>
+    <p>Completá el formulario y nos ponemos en contacto con vos a la brevedad.</p>
+    </div>
 
-        <div class="contact-info">
-          <div class="contact-item">
-            <h2>Teléfono</h2>
-            <p style="color: #f8f7f7;">0291 648-7118</p>
-          </div>
-          <div class="contact-item">
-            <h2>Instagram</h2>
-            <p><a href="https://www.instagram.com/gimnasiogabrielli/" target="_blank">@gimnasiogabrielli</a></p>
-          </div>
-          <div class="contact-item">
-            <h2>Email</h2>
-            <p style="color: #f8f7f7;">gimnasiogabrielli@gmail.com</p>
-          </div>
-          <div class="contact-item">
-            <h2>Dirección</h2>
-            <p style="color: #f8f7f7;">Berutti 551, B8000 Bahía Blanca, Provincia de Buenos Aires</p>
-          </div>
-        </div>
+        <form class="contacto-form">
 
+          <div class="form-group">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+          </div>
+
+          <div class="form-group">
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Tu apellido" required>
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="tucorreo@email.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribí tu mensaje acá..." required></textarea>
+          </div>
+
+          <div class="form-buttons">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpiar</button>
+          </div>
+
+        </form>
       </section>
     </main>
-
-    <footer>
-      <p style="color: #f8f7f7;">&copy; 2024 Gimnasio Gabrielli. Todos los derechos reservados.</p>
-    </footer>
 
   </body>
 </html>
