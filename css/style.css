@@ -12,6 +12,7 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
+<<<<<<< HEAD
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -19,6 +20,8 @@ body {
 
 main {
   flex: 1;
+=======
+>>>>>>> 55d7ffeda6c1ac036ecf5aad658898667913fe12
 }
 
 header nav {
@@ -135,6 +138,7 @@ header nav {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   line-height: 1.2;
 }
+<<<<<<< HEAD
 
 .contacto {
   padding: 60px 24px;
@@ -292,3 +296,5 @@ header nav {
   color: rgba(255, 255, 255, 0.85);
   font-size: 1rem;
 }
+=======
+>>>>>>> 55d7ffeda6c1ac036ecf5aad658898667913fe12
