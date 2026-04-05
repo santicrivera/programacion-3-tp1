@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedido de Servicio</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            background: #1e1e1e;
+            padding: 25px;
+            border-radius: 12px;
+            width: 350px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        label {
+            margin-top: 10px;
+            display: block;
+            font-size: 14px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: none;
+            outline: none;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        fieldset {
+            margin-top: 15px;
+            border: 1px solid #555;
+            border-radius: 8px;
+            padding: 10px;
+        }
+
+        legend {
+            padding: 0 10px;
+            font-weight: bold;
+        }
+
+        .radio-group label {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 5px;
+        }
+
+        .checkbox {
+            display: flex;
+            align-items: center;
+            gap: 5px;
+            margin-top: 10px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        .submit {
+            background: #00c853;
+            color: white;
+        }
+
+        .submit:hover {
+            background: #00a844;
+        }
+
+        .reset {
+            background: #d32f2f;
+            color: white;
+        }
+
+        .reset:hover {
+            background: #b71c1c;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>💪 Pedido de Servicio</h1>
+
+    <form action="https://httpbin.org/post" method="post" target ="_blank">
+
+        <label>Nombre:</label>
+        <input type="text" name="nombre" required>
+
+        <label>Correo Electrónico:</label>
+        <input type="email" name="email" required>
+
+        <label>Teléfono:</label>
+        <input type="tel" name="telefono" placeholder="Ej: 2911234567" required>
+
+        <label>Selecciona el servicio:</label>
+        <select name="servicio" required>
+            <option value="">--Selecciona--</option>
+            <option value="entrenamiento_personal">Entrenamiento Personal</option>
+            <option value="clases_grupales">Clases Grupales</option>
+            <option value="nutricion">Asesoría Nutricional</option>
+        </select>
+
+        <fieldset>
+            <legend>Tipo de Membresía</legend>
+
+            <div class="radio-group">
+                <label><input type="radio" name="membresia" value="basica" required> Básica</label>
+                <label><input type="radio" name="membresia" value="premium"> Premium</label>
+                <label><input type="radio" name="membresia" value="vip"> VIP</label>
+            </div>
+        </fieldset>
+
+        <label>Fecha deseada:</label>
+        <input type="date" name="fecha" required>
+
+        <label>Comentarios:</label>
+        <textarea name="comentarios" rows="4"></textarea>
+
+        <div class="checkbox">
+            <input type="checkbox" name="terminos" required>
+            <span>Acepto los términos</span>
+        </div>
+
+        <button type="submit" class="submit">Enviar Pedido</button>
+        <button type="reset" class="reset">Limpiar</button>
+
+    </form>
+</div>
+
+</body>
+</html>
