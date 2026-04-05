@@ -6,7 +6,83 @@
     <meta name="description" content="Gimnasio Gabrielli - Preguntas frecuentes">
     <title>Preguntas frecuentes - Gimnasio Gabrielli</title>
     <link rel="shortcut icon" href="../assets/favicon/gimnasio_favicon.jpg" type="image/x-icon">
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../Css/style.css">
+    <style>
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap');
+
+/* FAQ Styles */
+.faq {
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 10px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+}
+
+.faq h1 {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #0d0d0d;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.faq details {
+  margin-bottom: 10px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s;
+}
+
+.faq details:hover {
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.faq summary {
+  font-family: 'Barlow', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  color: #e63312;
+  padding: 15px 20px;
+  cursor: pointer;
+  list-style: none;
+  outline: none;
+  transition: background 0.3s;
+}
+
+.faq summary:hover {
+  background: #f9f9f9;
+}
+
+.faq summary::marker {
+  display: none;
+}
+
+.faq summary::before {
+  content: '▶';
+  font-size: 16px;
+  margin-right: 10px;
+  transition: transform 0.3s;
+}
+
+.faq details[open] summary::before {
+  transform: rotate(90deg);
+}
+
+.faq p {
+  font-family: 'Barlow', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+  padding: 0 20px 15px 20px;
+}
+    </style>
   </head>
   <body>
 
@@ -25,7 +101,7 @@
             <li><a href="equipo.html">Equipo</a></li>
             <li><a href="contacto.html">Contacto</a></li>
             <li><a href="faq.html" class="active">Preguntas frecuentes</a></li>
-            <li><a href="pedido.html" class="nav-cta">Inscribirse</a></li>
+            <li><a href="pedido.html" class="nav-cta">Realizar pedido</a></li>
           </ul>
 
         </div>
@@ -33,7 +109,6 @@
     </header>
 
     <main>
-       <main>
         <section class="faq">
             <img src="../assets/favicon/gimnasio_favicon.jpg" alt="Favicon del Gimnasio Gabrielli" style="display: block; margin: 0 auto 20px; max-width: 100px; height: auto;">
             <h1>Preguntas frecuentes</h1>
@@ -70,10 +145,6 @@
                     <p>Si, el licenciado salomone es nutricionista y puede proporcionarte recetas saludables y 20 tipos distintos de milanesas.</p>
                 </details>
         </section>
-    </main>
-
-  </body>
-</html>
     </main>
 
   </body>
