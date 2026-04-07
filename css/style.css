@@ -12,7 +12,6 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-<<<<<<< HEAD
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -20,8 +19,6 @@ body {
 
 main {
   flex: 1;
-=======
->>>>>>> 55d7ffeda6c1ac036ecf5aad658898667913fe12
 }
 
 header nav {
@@ -138,9 +135,6 @@ header nav {
   text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.8);
   line-height: 1.2;
 }
-<<<<<<< HEAD
-
-<<<<<<< HEAD
 /* FAQ Styles */
 .faq {
   max-width: 800px;
@@ -213,42 +207,7 @@ header nav {
   color: #333;
   padding: 0 20px 15px 20px;
 }
-  color: #333;
-  padding: 0 20px 15px 20px;
-}
-}
 
-.faq-item {
-  margin-bottom: 20px;
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s;
-}
-
-.faq-item:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-}
-
-.faq-item h2 {
-  font-family: 'Barlow', sans-serif;
-  font-size: 24px;
-  font-weight: 600;
-  color: #e63312;
-  margin-bottom: 10px;
-}
-
-.faq-item p {
-  font-family: 'Barlow', sans-serif;
-  font-size: 16px;
-  line-height: 1.6;
-  color: #333;
-}
-=======
->>>>>>> 4caf6fdff8fe21813b9a43facfec63cf3cc362aa
-=======
 .contacto {
   padding: 60px 24px;
   text-align: center;
@@ -284,8 +243,6 @@ header nav {
 .contact-item a:hover {
   color: #fff;
 }
-
-
 
 /* ===== CONTACTO ===== */
 .contacto-section {
@@ -402,9 +359,20 @@ header nav {
 
 .contacto-header p {
   margin: 0;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Barlow', sans-serif;
+}
+
+footer p {
+  margin: 0;
+}
+  margin: 0;
   color: rgba(255, 255, 255, 0.85);
   font-size: 1rem;
 }
-=======
->>>>>>> 55d7ffeda6c1ac036ecf5aad658898667913fe12
->>>>>>> 9a2e47848ea7e33979bf34b75937f2b7c18959ac
